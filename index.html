@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/CODEXlogo.png" type="image/x-icon">
+    <title>Henry Akinrinlola</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'verdana', sans-serif;
+        }
+
+        hr {
+            width: 63%;
+            align-self: flex-end;
+            color: white;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            background: url(./Images/dark-bg.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        .hero {
+            background: url(./Images/codexnew.jpeg);
+            background-size: cover;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-attachment: fixed;
+            clip-path: circle(180vh at 50% -100vh);
+            width: 100%;
+            height: 94vh;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 5em;
+            padding: 3em 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 10px;
+
+        }
+
+        .container h1 {
+            color: brown;
+            font-size: 3em;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .container h3 {
+            color: rgb(20, 7, 7);
+            margin: 0;
+            text-align: center;
+        }
+
+        .Cdx {
+            align-items: center;
+            display: flex;
+            margin: 0 100px;
+            gap: 55px;
+        }
+
+        #wlcm {
+            width: 100%;
+            font-size: 2em;
+            text-align: left;
+        }
+
+        .Cdx p {
+            width: 61%;
+            font-size: 15px;
+            line-height: 1.5;
+            text-align: right;
+            color: rgb(194, 193, 193);
+            align-self: end;
+        }
+
+        .image {
+            width: 50%;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        #dev {
+            font-size: 1.5em;
+        }
+
+        #web {
+            text-align: left;
+            align-self: flex-start;
+        }
+
+        #job {
+            text-align: right;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            width: 90%;
+
+        }
+
+        h4 {
+            color: lightslategray;
+            font-size: 25px;
+        }
+
+        .card-row {
+            display: flex;
+            border: 1px solid lightblue;
+            padding: 4em;
+            width: 100%;
+            gap: 2em;
+            border-radius: 10px;
+            box-shadow: 1em 1em 1em rgb(39, 31, 31);
+        }
+
+        .card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            border-radius: 10px;
+            align-items: center;
+            border: 1px solid rgb(19, 33, 41);
+            background-color: rgb(24, 43, 43);
+            box-shadow: 3px 3px 7px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 9px 9px 0 0;
+        }
+
+        .card div {
+            align-self: flex-start;
+            display: flex;
+            gap: 1em;
+            flex-direction: column;
+            margin-left: 10px;
+            padding: 0 0 1em 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: aliceblue;
+        }
+
+        .card h5 {
+            color: lightskyblue;
+            font-size: 18px;
+            width: 100%;
+        }
+
+        h5:hover {
+            color: darkgray;
+        }
+
+        .card button {
+            width: 7rem;
+            padding: 10px;
+            border-radius: 30px;
+            border: none;
+            font-weight: 600;
+            color: aliceblue;
+            background-color: rgb(1, 99, 99);
+            box-shadow: 2px 2px 8px rgb(40, 65, 68);
+        }
+
+        button:hover {
+            opacity: 0.7;
+            box-shadow: 2px 5px 10px rgb(68, 67, 67);
+        }
+
+        button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Codex Git</h1>
+            <h3>Frontend Dev</h3>
+        </div>
+    </section>
+    <section class="content">
+        <section class="Cdx">
+            <div class="container">
+                <h3 id="wlcm">Welcome to my Git</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sequi culpa.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iusto numquam aliquid!
+                </p>
+            </div>
+            <div class="image">
+                <img src="Images/helloworld.gif" alt="hello-world">
+            </div>
+        </section>
+
+        <section class="Cdx">
+            <div class="image" id="job">
+                <img src="Images/code.png" alt="programmer">
+            </div>
+            <div class="container">
+                <h3 id="dev">I AM A WEB DEVELOPER</h3>
+                <hr>
+                <p id="web">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit vel, labore nesciunt dolores repellat facere excepturi. Numquam illo laborum quisquam?
+                </p>
+            </div>
+        </section>
+    </section>
+    <aside>
+        <h4>PROJECTS</h4>
+        <section class="card-row">
+            <div class="card">
+                <img src="Images/easybank.jpg" alt="easybank-website">
+                <div>
+                    <h5>Easybank website</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sed ipsa id sapiente quam,
+                        minima aliquam rem.
+                        Itaque, doloremque fugit.
+                    </p>
+                    <button>Visit site</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Images/fourcard.jpg" alt="Fourcard website">
+                <div>
+                    <h5>Four-section website</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sed ipsa id sapiente quam,
+                        minima aliquam rem.
+                        Itaque, doloremque fugit.
+                    </p>
+                    <button>Visit site</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/Web3.jpg" alt="Web3-website">
+                <div>
+                    <h5>Web3 newspage</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sed ipsa id sapiente quam,
+                        minima aliquam rem.
+                        Itaque, doloremque fugit.
+                    </p>
+                    <button>Visit site</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/easybank.jpg" alt="easybank-website">
+                <div>
+                    <h5>Easybank website</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sed ipsa id sapiente quam,
+                        minima aliquam rem.
+                        Itaque, doloremque fugit.
+                    </p>
+                    <button>Visit site</button>
+                </div>
+            </div>
+        </section>
+    </aside>
+</body>
+
+</html>
