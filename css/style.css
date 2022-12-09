@@ -22,6 +22,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    opacity: 0.7;
 
 }
 
@@ -81,7 +82,7 @@ header nav {
     text-align: center;
 }
 
-.Cdx {
+.cdx {
     align-items: center;
     display: flex;
     margin: 0 100px;
@@ -94,13 +95,26 @@ header nav {
     text-align: left;
 }
 
-.Cdx p {
+.cdx p {
     width: 61%;
     font-size: 15px;
     line-height: 1.5;
     text-align: right;
     color: rgb(194, 193, 193);
     align-self: end;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.cont h3 {
+    color: rgb(110 90 90);
+    margin: 0;
+    text-align: center;
 }
 
 .image {
@@ -111,6 +125,7 @@ img {
     width: 50%;
     height: auto;
 }
+
 img:hover {
     opacity: 0.7;
 }
@@ -139,11 +154,12 @@ aside {
 i {
     color: #a9a1a1;
 }
+
 i:hover {
     opacity: 0.9;
     color: rgb(40, 243, 226);
     cursor: pointer;
-    
+
 }
 
 h4 {
@@ -310,18 +326,15 @@ footer {
 
 @media screen and (max-width: 575px) {
     body {
-        background: url(../Images/abstract.jpeg);
         background-repeat: no-repeat;
-        background-size: cover;
         background-position: center;
-        background-attachment: fixed;
-        width: 218vw;
     }
+
     header {
-        width: 100%;
         left: 6%;
         bottom: 88%;
     }
+
     header nav {
         gap: 2em;
         padding: 1em;
@@ -329,7 +342,132 @@ footer {
         flex-direction: row;
         border: none;
     }
+
     .hero {
         clip-path: none;
+        height: 72vh;
+    }
+
+    .container {
+        width: 71%;
+    }
+
+    .container h3 {
+        color: rgb(110 90 90);
+    }
+
+    .cdx {
+        margin: 0 24px;
+        gap: 35px;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+    }
+
+    .cdx p {
+        width: 100%;
+        font-size: 11px;
+        color: rgb(189 186 175);
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .cont {
+        width: 50%;
+    }
+
+    #wlcm {
+        font-size: 27px;
+        color: aliceblue;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    aside {
+        gap: 1em;
+    }
+
+    .card-row {
+        border: none;
+        padding: 2em;
+        gap: 1em;
+        flex-direction: column;
+    }
+
+    h4 {
+        font-size: 1.6em;
+    }
+
+    .card div {
+        padding: 0px 1em 1em 10px;
+    }
+
+    .card p {
+        font-size: 12px;
+        font-weight: 600;
+        color: #aeb0b1;
+    }
+
+    .skill {
+        padding-top: 5em;
+        gap: 3em;
+    }
+
+    .groskil {
+        justify-content: space-evenly;
+    }
+
+    footer {
+        margin-top: 5em;
+        border-top: 3px solid white;
+        width: 100%;
+        gap: 1em;
+        margin-bottom: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        color: #6183df;
+    }
+
+    #check {
+        font-size: 1.2em;
+    }
+
+    .msg {
+        background-color: black;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1200px){
+    body {
+        background-size: cover;
+    }
+    
+    .cdx p {
+        width: 96%;
+        font-size: 13px;
+    }
+    aside {
+        width: 96%;
+    }
+    
+    .card-row {
+        gap: 1em;
+        padding: 1em;
+    }
+    .card h5 {
+        font-size: 11px;
+    }
+    .card p {
+        font-size: 10px;
+        color: #5ca394;
+    }
+    .card button {
+        width: 5rem;
+        padding: 8px;
+        font-size: 10px;
     }
 }
