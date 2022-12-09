@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/CODEXlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Henry Akinrinlola</title>
     <style>
         * {
@@ -31,6 +32,22 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
 
+        }
+
+        header {
+            position: absolute;
+            width: 81%;
+            bottom: 70%;
+            z-index: 1;
+        }
+
+        header nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 5%;
+            border-right: 1px solid rgb(182, 174, 174);
+            border-radius: 5px;
         }
 
         .hero {
@@ -103,6 +120,9 @@
             width: 50%;
             height: auto;
         }
+        img:hover {
+            opacity: 0.7;
+        }
 
         #dev {
             font-size: 1.5em;
@@ -123,6 +143,16 @@
             gap: 2em;
             width: 90%;
 
+        }
+
+        i {
+            color: #a9a1a1;
+        }
+        i:hover {
+            opacity: 0.9;
+            color: rgb(40, 243, 226);
+            cursor: pointer;
+            
         }
 
         h4 {
@@ -180,6 +210,7 @@
         h5:hover {
             color: darkgray;
         }
+
 
         .card button {
             width: 7rem;
@@ -287,6 +318,15 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="https://github.com/Procodx" target="_blank"><i class="fa fa-github" style="font-size: 1em;"></i></a>
+            <a href="facebook.com" target="_blank"><i class="fa fa-facebook" style="font-size: 1em;"></i></a>
+            <a href="https://twitter.com/codexLag" target="_blank"><i class="fa fa-twitter" style="font-size: 1em;"></i></a>
+            <a href="https://stackoverflow.com/users/20732298/henry-akinrinlola" target="_blank"><i class="fa fa-stack-overflow" style="font-size: 1em;"></i></a>
+            <a href="https://app.slack.com/client/TCYEB44S2/CCWG47E6M/rimeto_profile/U049A8USN2X" target="_blank"><i class="fa fa-slack" style="font-size: 1em;"></i></a>
+        </nav>
+    </header>
     <section class="hero">
         <div class="container">
             <h1>Codex Git</h1>
@@ -332,7 +372,7 @@
                         minima aliquam rem.
                         Itaque, doloremque fugit.
                     </p>
-                    <button>Visit site</button>
+                    <a href="https://procodx.github.io/Codexonlinebank/"><button>Visit site</button></a>
                 </div>
             </div>
 
@@ -344,29 +384,29 @@
                         minima aliquam rem.
                         Itaque, doloremque fugit.
                     </p>
-                    <button>Visit site</button>
+                    <a href="https://procodx.github.io/four-card-section/"><button>Visit site</button></a>
                 </div>
             </div>
             <div class="card">
-                <img src="Images/Web3.jpg" alt="Web3-website">
+                <img src="Images/manage.jpg" alt="manage-landing-page">
                 <div>
-                    <h5>Web3 newspage</h5>
+                    <h5>manage-landing-page</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sed ipsa id sapiente quam,
                         minima aliquam rem.
                         Itaque, doloremque fugit.
                     </p>
-                    <button>Visit site</button>
+                    <a href="https://procodx.github.io/manage-landing-page/"><button>Visit site</button></a>
                 </div>
             </div>
             <div class="card">
-                <img src="Images/easybank.jpg" alt="easybank-website">
+                <img src="Images/Huddle.jpg" alt="Huddle-landing-page">
                 <div>
-                    <h5>Easybank website</h5>
+                    <h5>Huddle-landing-page</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sed ipsa id sapiente quam,
                         minima aliquam rem.
                         Itaque, doloremque fugit.
                     </p>
-                    <button>Visit site</button>
+                    <a href="https://procodx.github.io/Huddle-landing-page/"><button>Visit site</button></a>
                 </div>
             </div>
         </section>
@@ -382,7 +422,7 @@
     <footer>
         <h2>Thanks for checking in</h2>
         <h4>Check again next time</h4>
-        <button class="msg"><span>Message me </span></button>
+        <a href="https://wa.me/message/6I6HYY55CRIDL1"><button class="msg"><span>Message me </span></button></a>
     </footer>
 </body>
 
